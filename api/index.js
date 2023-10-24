@@ -1,18 +1,22 @@
-var express = require('express');
-const morgan = require('morgan');
-var cors = require('cors')
-var app = express();
-
+const express = require("express");
+const morgan = require("morgan");
+const cors = require("cors");
+const app = express();
+const blog = require("./routes/blogs");
 //basic setup
 
-app.use(morgan('dev'))
+app.use(morgan("dev"));
 app.use(express.json());
-app.use(cors())
+app.use(cors());
+app.use("/blog", blog);
 
-app.listen(8001,(err)=>{
-    if(err){
-        console.log("something went wrong")
-    }else{
-        console.log("app is listen at port 8001")
-    }
-})
+app.get("/", (req, res) => res.send("OK"));
+app.listen(8001, (err) => {  
+  if (err) {
+    console.log("something went wrong");
+  } else {
+    console.log("app is listen at port 8001");
+  }
+});
+
+
