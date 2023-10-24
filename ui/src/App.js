@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
-
+import * as React from 'react'
+import Card from './components/blog_card';
 function App() {
+  const [posts,setPosts]=React.useState([])
+  React.useEffect(()=>{
+    (async function(){
+      
+      const response=await fetch("http://localhost:8001/blog")
+      const data = await response.json()
+      setPosts(data)
+    })()
+    
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>Hello broooooo 🔥</h1>
+     {
+      posts.map(post=>{
+        
+        return(
+          <Card
+          caption={post.frontmatter.caption}
+          cover_image={post.frontmatter.cover_image}
+          slug={post.slug}
+          time={post.frontmatter.time}
+          title={post.frontmatter.title}
+          uploaded_at={post.frontmatter.uploaded_at}
+          content={post.content}
+          />
+        )
+      })
+     }
     </div>
   );
 }
