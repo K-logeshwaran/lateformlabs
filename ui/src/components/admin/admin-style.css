@@ -1,7 +1,65 @@
 
-.save-btn{
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 100;
+.admin-control-btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 1rem 0;
+}
+
+.admin-control-btns a,.admin-control-btns button{
+    all: unset;
+    border: 1px solid #fff;
+    padding: .3rem .9rem;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+    min-width: 50px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.admin-control-btns a{
+    background-color: #3375af;
+}
+.admin-control-btns button{
+    background-color: #d02e30;
+}
+
+.admin-nav-bar{
+    display: flex;
+    width: 98%;
+    justify-content: space-around;
+    border-bottom: 3px solid ;
+    margin: auto;
+}
+
+.admin-nav-bar a{
+    all: unset;
+    padding: 1rem;
+    font-weight: 700;
+    color: #3375af;
+    cursor: pointer;
+    text-align: center;
+}
+
+.admin-ctrl-post{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.admin-ctrl-post input{
+    min-width: 25%;
+    padding: .5rem 0;
+    
+}
+
+.admin-ctrl-post button{
+    min-width: 25%;
+    cursor: pointer;
+}
+.admin-ctrl-post input::placeholder
+{
+    padding-left: .3rem;
 }

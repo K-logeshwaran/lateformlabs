@@ -1,6 +1,5 @@
-import './App.css';
 import * as React from 'react'
-import Card from './components/blog_card';
+import Card from './components/blogs/blog_card';
 function App() {
   const [posts,setPosts]=React.useState([])
   React.useEffect(()=>{

@@ -1,8 +1,8 @@
 ---
 title: 'Word Counter App'
 time: '5'
-uploaded_at: '03/02/2003'
-cover_image: 'https://vgboxart.com/boxes/MOVIE/30337-fight-club.png?t=1245513630'
+uploaded_at: '06/22/2015'
+cover_image: 'https://cdn.vox-cdn.com/thumbor/QropgZXtxLTvnbahgUKXbOOl0kM=/1200x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/3728298/FightClub2_coverset1.0.jpg'
 caption: 'Word counter is a useful tool to know the number of words, characters, and other related statistics in a given text. In this tutorial, we will build a simple word counter app using JavaScript....'
 catagory : 'tech web js'
 meta_desc : 'Building a Word Counter App with JavaScript'
@@ -10,7 +10,7 @@ meta_keywords : 'word counter, character counter, text analyzer, word count tool
 url: '4-2020'
 ---
 # Asla Logesh
-![image](https://cdn.vox-cdn.com/thumbor/QropgZXtxLTvnbahgUKXbOOl0kM=/1200x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/3728298/FightClub2_coverset1.0.jpg)
+
 Word counter is a useful tool to know the number of words, characters, and other related statistics in a given text. In this tutorial, we will build a simple word counter app using JavaScript that counts the number of words, characters, vowels, and capital letters in a given text.
 
 ## Source Code
@@ -189,4 +189,4 @@ Overall, this program provides a simple and effective way of counting different 
 
 ## Conclusion
 
-The Word Counter App is a simple yet useful tool that helps users quickly calculate the word count, letter count, capital letter count, small letter count, and vowel count of a block of text. Its intuitive UI and well-written code make it easy to use and modify for personal or professional ![use.]()
+The Word Counter App is a simple yet useful tool that helps users quickly calculate the word count, letter count, capital letter count, small letter count, and vowel count of a block of text. Its intuitive UI and well-written code make it easy to use and modify for personal or professional use.

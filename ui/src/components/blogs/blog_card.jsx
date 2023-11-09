@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import "./blog_styles.css"
 function getRelativeDate(date) {
   const formatter = new Intl.RelativeTimeFormat("en", {
     style: "long",
@@ -24,27 +24,24 @@ function getRelativeDate(date) {
   }
 }
 
-function AdminCard({ filename, title, caption, cover_image, time, slug, uploaded_at: created_at, content, changeHook }) {
+function Card({ title, caption, cover_image, time, slug, uploaded_at: created_at, content }) {
   return (
-    <div className="blg-card">
+    <div className="blg-card" >
       <div className="blg-card-top" >
-        <img src={cover_image} className={"img"} alt="" />
+        <img src={cover_image} alt="" />
       </div>
       <div className="blg-fillers blg-card-btm">
-        <p className="blg-title"  >{title}</p>
-        <div className="admin-control-btns">
-          <Link to={`/admin/dashboard/edit/${filename}`} state={{ filename }} >Edit</Link>          
-          <button onClick={async () => {
-            const response = fetch(`http://localhost:8001/blog/content/${filename}`, {
-              method: 'DELETE'
-            })
-            changeHook()
-          }}>delete</button>
-        </div>
+        <h4 className="weight-600 blg-time" ><span >
+          {time}min read</span> </h4>
+        <Link to={`/blog/${slug}`} className="blg-title" state={{ content }} >{title}</Link>
+        <h4 className="weight-600">{getRelativeDate(created_at)}</h4>
+        <p >{caption}...</p>
+        <Link className="blg-readmore" to={`/blog/${slug}`} state={{ content }}>Read more {"->"}</Link>
 
       </div>
+
     </div>
   );
 }
 
-export default AdminCard;
+export default Card;

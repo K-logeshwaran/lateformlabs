@@ -1,5 +1,6 @@
 import * as React from 'react'
-import AdminCard from './admin/adminCard'
+import AdminCard from './adminCard'
+
 function AllPosts() {
     const [posts, setPosts] = React.useState([])
     const [ischanged,setChanged]=React.useState(false)
@@ -14,7 +15,7 @@ function AllPosts() {
     }, [ischanged]);
     const useChanged=()=>setChanged(!ischanged)
     return (  
-        <section className="blog-admin-panel">
+        <section className="feed">
         {
             posts.map(post => {
 

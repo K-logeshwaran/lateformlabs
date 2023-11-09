@@ -1,0 +1,208 @@
+.blg-card {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    gap: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.blg-card div img {
+    width: 100%;
+}
+.weight-600 {
+    font-weight: 600;
+}
+.blg-readmore {
+    all: unset;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 0.2rem 0.7rem;
+    font-weight: 600;
+    background-color: rebeccapurple;
+    color: whitesmoke;
+    text-align: center;
+}
+.blg-time {
+    border: 1px solid black;
+    width: 20%;
+    text-align: center;
+    padding: 0.2rem 0;
+    border-radius: 10px;
+}
+.blg-title {
+    all: unset;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 2em;
+}
+.blg-fillers {
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+}
+.blg-fillers p {
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.blg-card-btm,
+.blg-card-top {
+    flex-basis: 45%;
+}
+
+.feed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+    gap: 3rem;
+}
+
+.post-body {
+    width: 100%;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather", serif;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.post-body a {
+    all: unset;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+.post-body p {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+.post-body ul {
+    padding-left: 1.5rem;
+}
+.post-body h1,
+h2,
+h3,
+h4 {
+    font-family: "Enriqueta", serif;
+    padding: 1rem;
+    padding-left: 0;
+}
+.post-body h1 {
+    font-size: 1.7rem;
+}
+blockquote p {
+    text-overflow: clip;
+}
+blockquote {
+    padding: 0.5rem;
+    color: #f8fafc;
+    background-color: #292c34;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.blog-section {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+/* pre {
+    background-color: #eee;
+    overflow: scroll;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+  } */
+.post-body img {
+    width: 100%;
+}
+@media only screen and (max-width: 700px) {
+    .title {
+        font-size: 1.2rem;
+    }
+    .theme-icon {
+        cursor: pointer;
+        font-size: 1.3rem;
+    }
+    .section {
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .feed {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem;
+        gap: 3rem;
+    }
+}
+
+code {
+    line-height: 2;
+}
+
+/* CSS */
+.button-3 {
+    appearance: none;
+    background-color: #292c34;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 20%;
+    margin-top: 1rem;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.button-3:hover {
+    background-color: #2c974b;
+}
+
+.button-3:focus {
+    box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+    outline: none;
+}
+
+.button-3:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: default;
+}
+
+.button-3:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+
+.button-3 a {
+    all: unset;
+}

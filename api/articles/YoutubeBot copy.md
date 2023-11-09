@@ -1,8 +1,8 @@
 ---
-title: 'YouTube Bot'
+title: 'YouTube Bot with pyth mcdscs kcsdcm cdjfaksdmas mwdk  '
 time: '8'
-uploaded_at: '11/25/1966'
-cover_image: 'https://images.alphacoders.com/105/1059716.png'
+uploaded_at: '11/25/2022'
+cover_image: 'https://images4.alphacoders.com/885/885300.png'
 caption: 'What I did was, by using animechan-api ,I fetched random quotes from random anime ,then using bing_image_downloader ,I downloaded one image for one character'
 catagory : 'tech'
 meta_desc : 'Here we see how to create a bot with python'

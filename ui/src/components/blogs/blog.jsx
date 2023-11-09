@@ -15,9 +15,9 @@ function Blog() {
     }, []);
     return (
         <>
-            <main className="main" >
+            <main className="full-blog" >
 
-                <section className="section">
+                <section className="blog-section">
                     <Link to="/blogs">
                         <button className="button-3">Back</button>
                     </Link>

@@ -1,8 +1,8 @@
 ---
-title: 'YouTube Bot'
+title: 'Bro changed title'
 time: '8'
-uploaded_at: '11/25/1966'
-cover_image: 'https://images.alphacoders.com/105/1059716.png'
+uploaded_at: '11/01/2000'
+cover_image: 'https://bcassetcdn.com/public/blog/wp-content/uploads/2021/12/02151756/Header-Manga-Awards-30-Front-Covers-for-Your-Next-Binge.png'
 caption: 'What I did was, by using animechan-api ,I fetched random quotes from random anime ,then using bing_image_downloader ,I downloaded one image for one character'
 catagory : 'tech'
 meta_desc : 'Here we see how to create a bot with python'
@@ -27,6 +27,7 @@ Am here to share my youtube bot. Yeah you read that right that's a youtube bot ,
     
 * [bing\_image\_downloader](https://github.com/gurugaurav/bing_image_downloader)
     
+![image](https://c4.wallpaperflare.com/wallpaper/959/942/393/movie-fight-club-wallpaper-preview.jpg)
 
 ### Getting Started
 
