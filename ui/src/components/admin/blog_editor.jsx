@@ -5,7 +5,20 @@ import { useLocation } from 'react-router-dom';
 
 
 function Editor() {
-  const [value, setValue] = React.useState("**Hello world!!!**");
+  const [value, setValue] = React.useState(`
+  ---
+  title: 'value'
+  time: 'value'
+  uploaded_at: 'value'
+  cover_image: 'value'
+  caption: 'value'
+  catagory : 'value'
+  meta_desc : 'value'
+  meta_keywords : 'value'
+  url: 'value'
+  ---
+  
+  `);
   const { state } = useLocation()
   React.useEffect(() => {
 
